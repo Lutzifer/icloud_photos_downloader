@@ -245,7 +245,7 @@ Usage:
 # Downloads all photos to ./Photos
 
 $ docker pull ndbroadbent/icloudpd
-$ docker run -it --rm --name icloud -v $(pwd)/Photos:/data ndbroadbent/icloudpd:latest \
+$ docker run -it --rm --name icloud -v "$(pwd)/Photos:/data" ndbroadbent/icloudpd:latest \
     icloudpd /data \
     --username testuser@example.com \
     --password pass1234 \
